@@ -23,6 +23,5 @@ print(driver.find_elements_by_tag_name("a")[1].text)
 # aタグ２つめをクリック 
 time.sleep(1)
 driver.find_elements_by_tag_name("a")[1].click()
-tag_a = driver.find_element_by_tag_name("a")
 time.sleep(3)
 driver.quit()
