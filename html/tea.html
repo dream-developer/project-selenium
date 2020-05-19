@@ -1,0 +1,31 @@
+<html>
+<head><title>Tea</title></head>
+<body>
+<p class="item_name">Tea</p>
+<p class="unit_price">200円</p>
+<form method="POST" action="complete.html" onsubmit="return confirm('注文しますか？');">
+注文数：
+<select name="num">
+<option value="">注文数を選択してください</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+</select>
+<br>  
+ホット/アイス：
+<input type=radio name="hotice" value="hot">ホット
+<input type=radio name="hotice" value="ice">アイス
+<br>
+付属：
+<input type=checkbox name="included" value="sugar">砂糖
+<input type=checkbox name="included" value="milk">ミルク
+<input type=checkbox name="included" value="lemon">レモン
+<br>
+備考：<input type=text name="remarks">
+<br>
+<input type=submit value="注文">
+<input type=reset value="リセット">
+</form>
+<a id="returnmenu" href="menu.html">Menuにもどる</a>
+</body>
+</html>
