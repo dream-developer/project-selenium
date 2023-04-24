@@ -3,7 +3,7 @@ from selenium import webdriver
 # Optionsのimport
 from selenium.webdriver.chrome.options import Options
 import time
-url = "file:///C:/Users/writer/study_work/html/menu.html"
+url = "file:///D:/独学/Python/Selenium+BeautifulSoup/project-selenium/html/menu.html"
 # オプション指定
 options = Options()
 options.add_argument('--incognito')

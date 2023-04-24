@@ -1,11 +1,13 @@
 # -*- coding: utf-8 -*-
 from selenium import webdriver
 import time
-url = "file:///C:/Users/writer/study_work/html/menu.html"
+from selenium.webdriver.common.by import By
+
+url = "file:///D:/独学/Python/Selenium+BeautifulSoup/project-selenium/html/menu.html"
 driver = webdriver.Chrome()
 driver.get(url)
 # テキストリンクがCoffeeの要素を取得しクリック
-element = driver.find_element_by_link_text("Coffee")
+element = driver.find_element(By.LINK_TEXT, "Coffee")
 element.click()
 time.sleep(1)
 # ページ更新
